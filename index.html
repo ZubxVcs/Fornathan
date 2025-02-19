@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selamat ulang tahun</title>
+    <style>
+        body {
+            background-color: #ffd1dc;
+        }
+
+        .gift-box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            cursor: pointer;
+        }
+
+        .box-bottom {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            z-index: 1;
+        }
+
+        .box-top {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            transition: transform 1.5s ease;
+        }
+
+        .gift-box.opened .box-top {
+            transform: translateY(-50px);
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">bukaaaaa kotak di bawah
+    </h1>
+    <div class="gift-box" onclick="handleClick(this)">
+        <img src="box_buttom.png" alt="Box Bottom" class="box-bottom">
+        <img src="box_top.png" alt="Box Top" class="box-top">
+    </div>
+
+    <script>
+        function handleClick(element) {
+            element.classList.toggle('opened');
+            setTimeout(() => {
+                window.location.href = 'pg2.html';
+            }, 1500);
+        }
+    </script>
+</body>
+</html>

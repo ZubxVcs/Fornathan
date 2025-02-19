@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun</title>
+    <style>
+        body {
+            background-color: #ffd1dc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            background-color: white;
+            padding: 35px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #ff69b4;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            font-size: 1.2em;
+        }
+        .cake {
+            font-size: 5em;
+            margin: 20px 0;
+        }
+        .reply-button {
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .reply-button:hover {
+            background-color: #128C7E;
+        }
+
+        .balon_abc{
+            position: absolute;
+            bottom: -100px;
+            left: 0;
+            animation: balon 5s ease-out forwards;
+            animation-delay: 0.2s;
+        }
+
+        .balon_abc img {
+            width: 100px;
+            height: auto;
+        }
+        .balon_biru {
+            position: absolute;
+            bottom: -100px;
+            left: 20%;
+            animation: balon 5s ease-out forwards;
+            animation-delay: 0.2s;
+        }
+        .balon_biru img {
+            width: 100px;
+            height: auto;
+        }
+
+        .balon_red {
+            position: absolute;
+            bottom: -100px; 
+            left: 40%;
+            animation: balon 5s ease-out forwards;
+        }
+        .balon_red img {
+            width: 100px;
+            height: auto;
+        }
+
+        .balon_yellow {
+            position: absolute;
+            bottom: -100px;
+            left: 60%;
+            animation: balon 5s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+        .balon_yellow img {
+            width: 100px;
+            height: auto;
+        }
+
+        .balon_green {
+            position: absolute;
+            bottom: -100px;
+            left: 80%;
+            animation: balon 5s ease-out forwards;
+            animation-delay:0.7s;
+        }
+        .balon_green img {
+            width: 100px;
+            height: auto;
+        }
+
+        @keyframes balon {
+            from {
+            transform: translateY(0);
+            opacity: 0;
+            }
+            to {
+            transform: translateY(-800px);
+            opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Selamat Ulang Tahun! 🎉</h1>
+        <div class="cake">🎂</div>
+        <p>Selamat ulang tahun nathan semoga sehat selalu dan menjadi anak soleh <br>
+            jangan lupa makan dan bernafas <br>
+            <br>
+            -karl </p>
+        <a href="pg3.html" class="reply-button" target="_blank">Balas?</a>
+    </div>
+    <div class="balon_biru"><img src="blue_balon.png"></div>
+    <div class="balon_red"><img src="red_balon.png"></div>
+    <div class="balon_yellow"><img src="blue_balon.png"></div>
+    <div class="balon_green"><img src="red_balon.png"></div>
+    <div class="balon_abc"><img src="red_balon.png"></div>
+</body>
+</html>
